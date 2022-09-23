@@ -1,5 +1,5 @@
 const app = require("./app/routes/index");
-// const keys = require("./app/config/keys");
+const keys = require("./app/config/keys");
 const db = require("./app/config/db");
 const dotenv = require("dotenv").config;
 
