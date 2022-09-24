@@ -1,4 +1,4 @@
-c/* eslint-disable max-lines-per-function */
+/* eslint-disable max-lines-per-function */
 const winston = require("winston");
 const fs = require("fs");
 const appRoot = require("app-root-path");
