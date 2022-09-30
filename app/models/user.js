@@ -2,26 +2,26 @@ const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
 const UserSchema = new mongoose.Schema({
-    UserName: {
+    username: {
         type: String,
-        required: [true, "User must ave a username"],
+        required: true, 
         sparse: true,
     },
-    Email:{
+    email:{
         type: String,
-        required: [true, "User must have a valid email"],
+        required: true,
     },
     phoneNumber:{
         type: Number,
-        required: [true, "User must have a valid phone number"],
+        required: true, 
     },
     password:{
         type: String,
-        required: [true, "User must have a valid password"],
+        required: true,
     },
     address:{
         type: String,
-        required: [true, "User must have a valid address"],
+        required: true, 
     },
 },
 {timestamps: true}
