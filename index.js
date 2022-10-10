@@ -1,20 +1,24 @@
 const app = require("./app/routes/index");
-const db = require("./app/config/db");
+// const keys = require("./app/config/keys");
+// const db = require("./app/config/db");
 const dotenv = require("dotenv").config;
 
 require("dotenv").config();
 
+// console.log(process.env);
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-db()
-  .then(() => {
-    console.log("database connected");
-  })
-  .catch((err) => {
-    console.log(`Database connection failed ${err.message}`);
-  });
+// db()
+//   .then(() => {
+//     console.log("database connected");
+//   })
+//   .catch((err) => {
+//     console.log(`Database connection failed ${err.message}`);
+//   });
 
-app.listen(port, () => {
-  console.log(`listening on port: ${port}`);
-})
+app.listen(PORT, () => {
+  console.log(`listening on port: ${PORT}`);
+});
+
+
