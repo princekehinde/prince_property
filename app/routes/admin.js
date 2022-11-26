@@ -1,6 +1,6 @@
 const express = require("express");
 const validate = require("../validation/admin");
-// const { signUpAdmin, loginAdmin } = require("../validation/admin");
+const { signUpAdmin, loginAdmin } = require("../validation/admin");
 const {
   signUpAdminController,
   signInAdminController,
